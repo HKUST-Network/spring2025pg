@@ -1,19 +1,19 @@
 # Site settings
 course_name: Computer Networks (ELEC 3120)
-course_description: ""
+course_description: "Foggy is the pronunciation of HKUST in Cantonese. It was also my feeling when I was learning computer networks."
 course_semester: "Fall 2024"
 
 baseurl: "/fall2024" # the subpath of your site, e.g. /blog/
 url: "https://hkust-network.github.io/" # the base hostname & protocol for your site
 
-schoolname: "Hogwarts"
-schoolurl: "https://hogwarts.edu"
-twitter_username: username 
+schoolname: "HKUST ECE"
+schoolurl: "https://www.foggynetwork.com"
+# twitter_username: username 
 
 address: |
-    School of Witchcraft and Wizardry
-    Hogwarts
-    Scotland
+    Department of Electronic and Computer Engineering
+    Hong Kong University of Science and Technology
+    Hong Kong
 
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
 # google_analytics: UA-XXXXXXXX-X
@@ -41,7 +41,7 @@ collections:
     assignments:
         output: true
     announcements:
-        output: false
+        output: true
 
 
 defaults:

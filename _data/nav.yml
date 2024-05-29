@@ -19,6 +19,11 @@ items:
   name: Project
   icon_class: fas fa-user-graduate
 
-- url: /materials/
-  name: Materials
-  icon_class: fas fa-book
+externals:
+- url: https://gradescope.com/
+  name: Gradescope
+  icon_class: fas fa-user-graduate
+
+- url: https://piazza.com/
+  name: Piazza
+  icon_class: fas fa-book-reader
