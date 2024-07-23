@@ -1,6 +1,6 @@
 # Site settings
 course_name: Computer Networks (ELEC 3120)
-course_description: "Foggy is the pronunciation of HKUST in Cantonese. It was also my feeling when I was learning computer networks."
+course_description: "Foggy University is the pronunciation of HKUST in Cantonese. Walking in the fog was also my feeling when I was learning computer networks."
 course_semester: "Fall 2024"
 
 baseurl: "/fall2024" # the subpath of your site, e.g. /blog/
@@ -42,11 +42,18 @@ collections:
         output: true
     announcements:
         output: true
+    checkpoints:
+        output: true
 
 
 defaults:
   - scope:
       path: ""
       type: "assignments"
+    values:
+      layout: "assignment"
+  - scope:
+      path: ""
+      type: "checkpoints"
     values:
       layout: "assignment"

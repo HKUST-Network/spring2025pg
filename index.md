@@ -8,10 +8,10 @@ The goal is for students to learn not only what computer networks are and how th
 
 For potential students, please read the announcement below and think twice before you decide to add this course.
 
-### I've heard that ELEC 3120 is very challenging. Is that true?
+### I've heard that ELEC 3120 is coding-intensive. Am I suitable for this course?
 
 Here is a way to see if you are suitable for ELEC 3120.
-Forget about the exams in COMP 2011 -- ELEC 3120 is not going to test your programming skills on papers. Just think about the programming assignments: do you like it? do you enjoy writing code? If you quite enjoy it (and probably even taking COMP 2012), then ELEC 3120 will be easy for you. If you don't, then you may need to think twice.
+Forget about the exams in COMP 2011 -- ELEC 3120 is not going to test your programming skills on papers. Just think about the programming assignments: do you like it? do you enjoy writing code? If you quite enjoy it (and probably are even taking COMP 2012), then ELEC 3120 will be easy for you. If you don't, then you may need to think twice.
 
 ### What project am I going to do?
 
@@ -23,6 +23,14 @@ Why so?
 Because we want you to understand how the most important protocol on the Internet, TCP, works, and the best way to understand it is to implement it yourself.
 And also, for many ELEC students, this will be the only programming project in your undergraduate study. For future engineers, it is important to know how to make plans for a project.
 
+## Schedule
+
+| Class | Time | Location |
+|:---:|:---:|:---:|
+| Lecture | TuTh 3:00PM - 4:20PM | [Lecture Theater D](https://pathadvisor.ust.hk/nearest/lift/to/LTD;bFQMqeWF_ERU;1;1893,450/floor/1/at/normalized/1893,450,3) |
+| Tutorial T1 | Mo 9:30AM - 10:20AM | [Rm 1034, LSK Bldg](https://pathadvisor.ust.hk/search/nearest/lift/to/ROOM%201034;f9_NTYWV4bOh;LSK1;461,597/floor/LSK1/at/normalized/24,827,3) |
+| Tutorial T2 | Mo 6:00PM - 6:50PM | [Rm 6573, Lift 29-30](https://pathadvisor.ust.hk/search/nearest/lift/to/ROOM%206573;66ShdpdBdYbD;6;2848,-359/floor/6/at/normalized/2737,40,3) |
+
 ## Prerequisites
 
 * COMP 1021 (Python Programming)
@@ -32,7 +40,7 @@ If you believe you are capable of the knowledge of C++ programming, send me an e
 
 ## Resources
 
-* Piazza.\
-  For all course-related questions, you are not encouraged to email the instructor directly unless privacy concerns are involved. Instead, post your question on Piazza. This way, other students can benefit from the answer as well. You can also post anonymously if you wish.
+* [Ed](https://edstem.org/au/courses/16830/discussion/).\
+  For all course-related questions, you are **strongly discouraged** to email the instructor directly unless privacy concerns are involved. Instead, post your questions on Ed (it can be anonymous). Other students can benefit from the answer as well.
 * Gradescope.\
   For submitting homework assignments and projects.

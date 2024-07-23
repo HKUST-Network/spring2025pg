@@ -24,6 +24,6 @@ externals:
   name: Gradescope
   icon_class: fas fa-user-graduate
 
-- url: https://piazza.com/
-  name: Piazza
+- url: https://edstem.org/au/courses/16830/discussion/
+  name: Ed
   icon_class: fas fa-book-reader
