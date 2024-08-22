@@ -20,7 +20,7 @@ items:
   icon_class: fas fa-user-graduate
 
 externals:
-- url: https://gradescope.com/
+- url: https://www.gradescope.com/courses/834069
   name: Gradescope
   icon_class: fas fa-user-graduate
 

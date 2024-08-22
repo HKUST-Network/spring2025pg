@@ -6,12 +6,23 @@ ELEC 3120 is an introductory course in computer networks. The emphasis will be o
 
 The goal is for students to learn not only what computer networks are and how they work today, but also why they are designed the way they are and how they are likely to evolve in the future. We will draw examples primarily from the Internet. Topics to be covered include: congestion/flow/error control, routing, addressing, naming, multi-casting, switching, internetworking, and network security. Evaluation is based on homework assignments, the project, one midterm exam, and one final exam.
 
-For potential students, please read the announcement below and think twice before you decide to add this course.
+For potential students, please read the announcement below before you decide to add this course.
 
-### I've heard that ELEC 3120 is coding-intensive. Am I suitable for this course?
+### **NEW!!** 
 
-Here is a way to see if you are suitable for ELEC 3120.
-Forget about the exams in COMP 2011 -- ELEC 3120 is not going to test your programming skills on papers. Just think about the programming assignments: do you like it? do you enjoy writing code? If you quite enjoy it (and probably are even taking COMP 2012), then ELEC 3120 will be easy for you. If you don't, then you may need to think twice.
+As you might have noticed, the quota for ELEC3120 is doubled from the past semesters. This is because ELEC3120 will only be offered in the Fall semester from now on and will not be available in Spring 2025. Please plan your course schedules accordingly to accommodate this change. 
+
+### Am I suitable for this course?
+
+ELEC 3120 is full of fun -- you will learn how the Internet works, how to build a network, and how to secure it.
+Now when I look back, I can see that the computer network is full of clever yet simple ideas, and I want to convey these ideas to you.
+We also have a series of project checkpoints to help you to get your hands dirty by building a simple file transfer application. 
+This is also one of the few courses offered by ELEC that helps you to improve your coding skills -- you will learn to use Git, Copilot, and other tools that are widely used when you're going to find a job in software-related fields.
+
+Here is a way to see if you are suitable for the coding skills in ELEC 3120.
+Forget about the exams in COMP 2011 -- ELEC 3120 is not going to test your coding skills on papers. 
+Just think about the programming assignments: do you like it? do you enjoy writing code? If you quite enjoy it (and probably are even taking COMP 2012), then ELEC 3120 will be easy for you. If you (at least) do not suffer from it, ELEC 3120 is still a good choice.
+However, if you feel that writing and debugging code is a nightmare, then you may want to reconsider your choice.
 
 ### What project am I going to do?
 
@@ -36,11 +47,11 @@ And also, for many ELEC students, this will be the only programming project in y
 * COMP 1021 (Python Programming)
 * COMP 2011 (C++ Programming) -- This is not a hard requirement, but it is strongly recommended.
 
-If you believe you are capable of the knowledge of C++ programming, send me an email and I will waive your prerequisites.
+If you believe you are capable of the knowledge of C++ programming but do not satisfy the prerequisites, send me an email and I will waive your prerequisites.
 
 ## Resources
 
 * [Ed](https://edstem.org/au/courses/16830/discussion/).\
   For all course-related questions, you are **strongly discouraged** to email the instructor directly unless privacy concerns are involved. Instead, post your questions on Ed (it can be anonymous). Other students can benefit from the answer as well.
-* Gradescope.\
+* [Gradescope](https://www.gradescope.com/courses/834069).\
   For submitting homework assignments and projects.
