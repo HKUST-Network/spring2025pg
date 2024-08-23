@@ -34,6 +34,13 @@ Why so?
 Because we want you to understand how the most important protocol on the Internet, TCP, works, and the best way to understand it is to implement it yourself.
 And also, for many ELEC students, this will be the only programming project in your undergraduate study. For future engineers, it is important to know how to make plans for a project.
 
+### What's the policy of using AI tools?
+
+This course strongly encourages the use of generative artificial intelligence tools to complete assessment tasks. You will have the opportunity to learn to use a series of tools, such as GitHub Copilot, in your project.
+We also encourage you to use GPT to better understand how network works.
+But be careful! We have a strict policy on plagiarism. 
+If your assignments are detected to be copied or AI-generated, this will be a serious issue.
+
 ## Schedule
 
 | Class | Time | Location |

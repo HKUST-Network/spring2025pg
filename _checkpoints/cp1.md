@@ -1,10 +1,10 @@
 ---
 type: assignment
-date: 2018-09-26T4:00:00+4:30
+date: 2024-09-05
 title: 'Checkpoint 1: Kickoff'
 due_event: 
     type: due
-    date: 2018-11-13T23:59:00+3:30
+    date: 2024-09-20
     description: 'Checkpoint #1 due'
 ---
 
@@ -34,16 +34,13 @@ Otherwise, follow the instructions below.
 
 # Setup the environment
 
-Once you have both Vagrant and Docker Desktop installed, navigate inside this repo and run:
+Once you have both Vagrant and VirtualBox installed, navigate inside this repo and run:
 
 ```bash
 # In your project root folder where your Vagrantfile is located
-vagrant up --provider=docker
-# builds the server and client containers using Docker.
+vagrant up
+# builds the server and client containers using VirtualBox.
 ```
-*If error messages show up, double check if the Docker Engine has started. For Windows users, open the Docker Desktop and manually start the Docker Engine if it's not started.*
-
-*FAQ：Error message "config.size > 0"* This is because you are using an old version of Vagrant. Please download the version 2.4.2 or above.
 
 After the containers are built, you can access the client and server containers using the following commands:
 ```bash

@@ -9,7 +9,7 @@ permalink: /project/
 ## Checkpoints
 * Checkpoint 1: Kickoff\
   * How to use Git, GitHub, and Copilot.
-  * How to set up the environment using Docker and vagrant.
+  * How to set up the environment using VirtualBox and vagrant.
   * How to send and receive data using sockets.
   * Understand the transmission delay and propagation delay through measurements.
 * Checkpoint 2: Basic TCP\
