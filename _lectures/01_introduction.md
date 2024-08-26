@@ -1,10 +1,10 @@
 ---
 type: lecture
 date: 2024-09-03
-title: (Introduction) Network Transmission and Performance
+title: Network Transmission and Performance
 thumbnail: /static_files/presentations/lec.jpg
 links: 
-    - url: https://google.com
+    - url: https://canvas.ust.hk/courses/58326/files/9264933?module_item_id=1369052
       name: slides
 hide_from_announcments: true
 ---

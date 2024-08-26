@@ -13,7 +13,7 @@ permalink: /project/
   * How to send and receive data using sockets.
   * Understand the transmission delay and propagation delay through measurements.
 * Checkpoint 2: Basic TCP\
-  * Sequence number and acknolegement number
+  * Sequence number and acknowledgement number
   * Sliding window
 * Checkpoint 3: TCP Functionalities\
   * Fast retransmission
