@@ -11,11 +11,11 @@ due_event:
 
 # Validate your GitHub student status
 
-Please do it as soon as possible. It may take a few days to validate your status.
+Please do it as soon as possible. It may take a few days to validate your status. Then you can use Copilot for free. You may refer to [this guide](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/managing-your-copilot-subscription/getting-free-access-to-copilot-as-a-student-teacher-or-maintainer).
 
 # Create a **PRIVATE** repo of your project
 
-Later, clone the repo to your local machine.
+Clone the repo to your local machine.
 ```
 git clone <your-repo-url>
 ```
@@ -62,6 +62,7 @@ Similarly, debugging files and other files generated on the containers will auto
 ```bash
 # In the server VM
 cd /vagrant/foggytcp
+mkdir build
 make system
 ```
 You will see the binaries `server` and `client` in the `foggytcp` folder.
