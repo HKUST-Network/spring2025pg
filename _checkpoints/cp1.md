@@ -88,6 +88,30 @@ In the client VM, at the `/vagrant/foggytcp` folder, run the client with the fol
 
 Now you have successfully transmitted the `client.cc` file from the client to the server, named as `test.out`.
 
+
+## Set traffic control manually
+[tcconfig](https://tcconfig.readthedocs.io/en/latest/index.html) can be used to manually set traffic control between client VM and server VM. Use the following command to install it:
+```bash
+sudo pip install tcconfig
+```
+
+Then you need to check the network interface name of your VM:
+```bash
+ifconfig
+```
+
+Then you can set traffic control to this interface. For example, use the following command to set one-way latency to be 100ms:
+```bash
+sudo tcset $IFNAME --delay 100ms
+```
+
+And use the following command to see your settings:
+```bash
+sudo tcshow $IFNAME
+```
+
+Please refer to the [tcconfig documents](https://tcconfig.readthedocs.io/en/latest/index.html) for more usages.
+
 # What to submit
 
 ## Codes
@@ -105,10 +129,15 @@ python submit.py
 4. Submit the `submit.zip` file to Gradescope.
 
 ## Report
+You need to measure the file transmission time for
+* Different bandwidths
+* Different delays
+* Different loss rates
+* Different file sizes
 
-In the first report, you will need to follow the hypothesis-experiment-conclusion format.
+and come up with a report. In the report, you need to follow the hypothesis-experiment-conclusion structure: 
 
-Transmission time of
-* Different bandwidth
-* Different delay
-* Different file sizes.
+* **Hypothesis.** Before running experiments, what is your expected results? Why?
+* **Experiment.** Measure the file transmission time under different conditions and plot your results. Please make your plots **reader-friendly**.
+* **Conclusion.** Does you experiment results match your expectations? What may cause the gap between them? If your predictions are totally different from your resutls, please hypothesize as to why your predictions were wrong.
+
