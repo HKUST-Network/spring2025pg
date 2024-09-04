@@ -62,3 +62,5 @@ If you believe you are capable of the knowledge of C++ programming but do not sa
   For all course-related questions, you are **strongly discouraged** to email the instructor directly unless privacy concerns are involved. Instead, post your questions on Ed (it can be anonymous). Other students can benefit from the answer as well.
 * [Gradescope](https://www.gradescope.com/courses/834069).\
   For submitting homework assignments and projects.
+* [Github repo](https://github.com/HKUST-Network/foggytcp).\
+  For releasing code template for projects.

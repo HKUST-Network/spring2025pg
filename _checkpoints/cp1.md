@@ -17,7 +17,7 @@ Please do it as soon as possible. It may take a few days to validate your status
 
 Clone the repo to your local machine.
 ```
-git clone <your-repo-url>
+git clone https://github.com/HKUST-Network/foggytcp.git
 ```
 *Reminder: Use git to clone the repo instead of download as a zip. Otherwise you cannot track the changes.*
 
