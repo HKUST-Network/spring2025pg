@@ -14,7 +14,8 @@ address: |
     Department of Electronic and Computer Engineering
     Hong Kong University of Science and Technology
     Hong Kong
-
+    
+timezone: Asia/Hong_Kong
 # Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
 # google_analytics: UA-XXXXXXXX-X
 
