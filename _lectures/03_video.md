@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-09-10
+date: 2024-09-12
 title: Video Streaming
 thumbnail: /static_files/presentations/lec.jpg
 # links: 

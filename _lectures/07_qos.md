@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-09-24
+date: 2024-09-26
 title: QoS, Rate Limit and Performance
 thumbnail: /static_files/presentations/lec.jpg
 # links: 

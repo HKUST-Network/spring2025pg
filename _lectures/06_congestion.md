@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-09-19
+date: 2024-09-24
 title: Congestion Control
 thumbnail: /static_files/presentations/lec.jpg
 # links: 
