@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-10-24
+date: 2024-10-29
 title: Routing Protocols
 thumbnail: /static_files/presentations/lec.jpg
 # links: 
