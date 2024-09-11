@@ -9,4 +9,5 @@ links:
 hide_from_announcments: true
 ---
 **Suggested Readings:**
-
+- [P&D 7.2](https://book.systemsapproach.org/data/multimedia.html)
+- [P&D 9.2](https://book.systemsapproach.org/applications/multimedia.html)

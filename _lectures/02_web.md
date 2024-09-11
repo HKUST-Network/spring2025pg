@@ -11,3 +11,4 @@ links:
 hide_from_announcments: true
 ---
 **Suggested Readings:**
+- [P&D 9.1](https://book.systemsapproach.org/applications/traditional.html)
