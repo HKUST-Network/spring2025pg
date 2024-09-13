@@ -130,14 +130,29 @@ python submit.py
 
 ## Report
 You need to measure the file transmission time for
+* Different file sizes
 * Different bandwidths
 * Different delays
-* Different loss rates
-* Different file sizes
 
-and come up with a report. In the report, you need to follow the hypothesis-experiment-conclusion structure: 
+and plot them in three figures. Remember to fix other two parameters while changing one and make your plots **reader-friendly**. In the report, you need to follow the hypothesis-experiment-conclusion structure: 
 
 * **Hypothesis.** Before running experiments, what is your expected results? Why?
-* **Experiment.** Measure the file transmission time under different conditions and plot your results. Please make your plots **reader-friendly**.
+* **Experiment.** Measure the file transmission time under different conditions and plot your results.
 * **Conclusion.** Does you experiment results match your expectations? What may cause the gap between them? If your predictions are totally different from your resutls, please hypothesize as to why your predictions were wrong.
 
+The following parameter configurations are for your reference. You are free to test with other configurations to verify your hypothesis.
+
+**Test 1**
+- Bandwidth = 10Mbps
+- Delay = 10ms
+- Filesize = 1KB, 5KB, 25KB, 100KB, 1MB,10MB
+
+**Test 2**
+- Dealy = 10ms
+- Filesize = 1MB
+- Bandwidth = 1Mbps, 5Mbps, 10Mbps, 20Mbps
+
+**Test 3**
+- Bandwidth = 10Mbps
+- Filesize = 1MB
+- Delay = 0ms, 5ms, 10ms, 20ms, 50ms, 100ms
