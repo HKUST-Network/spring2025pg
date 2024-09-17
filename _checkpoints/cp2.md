@@ -17,21 +17,25 @@ In this checkpoint, you need to implement a basic TCP with:
 The starter code is provided for you which is a stop-and-wait plementation built on UDP. You need to implement the seq/ack numbering and sliding window based on it.
 
 # Starter code
-The two sample applications server.cc and client.cc are the same with those in checkpoint 1. 
 
-The API exposed to applications is defined in foggy_tcp.h and consists of four core functions whose signatures should not be changed :```foggy_socket()```, ```foggy_close()```, ```foggy_read()```, and ```foggy_write()```. An application requests a new foggy-TCP socket by calling the foggy_socket function. 
+### ```server.cc``` and ```client.cc```
+The two sample applications for server and client. 
 
-While the functions defined in the API are implemented in foggy_tcp.cc, which runs on the same thread as the application, most of foggy-TCP’s core logic actually runs in a separate backend thread. This is important as TCP must
+### ```foggy_tcp.cc```
+The API exposed to application is defined in this file. There are four core functions whose signatures should not be changed :```foggy_socket()```, ```foggy_close()```, ```foggy_read()```, and ```foggy_write()```. An application requests a new foggy-TCP socket by calling the foggy_socket function. The socket created in ```foggy_socket()``` is actuall a UDP socket and our job is to enhance it to TCP.
+
+### ```foggy_backend.cc```
+This file implements foggy-TCP’s core logic which runs in a separate backend thread. This is important as TCP must
 be able to work independently from the application (i.e., receiving, acknowledging and retransmitting packets). 
 
-# Run the starter code
-The started code is hosted in branch **cp2**. You may fetch this branch to your local machine.
-```bash
-git fetch cp2
-git checkout cp2
-```
+### ```foggy_function.cc```
+This file implements foggy-TCP's function logics. Most of your implementations may be here.
 
-Then build foggy-tcp
+### ```foggy_packet.cc```
+This file implements helper functions to create and manipulate packets. Please do not modify this file.
+
+# Run the starter code
+In this checkpoint and the following you need to use your own TCP (foggy-tcp) instead of system TCP. So use the following command to build foggy-tcp.
 ```bash
 make foggy
 ```
