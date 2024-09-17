@@ -47,3 +47,38 @@ In the client VM, at the `/vagrant/foggytcp` folder, run the client with the fol
 ```
 
 Now you have successfully transmitted the `client.cc` file from the client to the server, named as `test.out`.
+
+# How to debug
+A bash script ```capture_packets.sh``` is provided for you to capture and analyze network packets.
+
+## Packet capture
+Converting file capture_packets.sh to Unix format.
+```bash
+sudo apt-get install dos2unix
+dos2unix capture_packets.sh
+```
+
+Start packet capture.
+```bash
+sudo ./capture_packets.sh start <name>.pacp
+```
+
+Stop packet capture
+```bash
+sudo ./capture_packets.sh stop <name>.pcap
+```
+
+## Packet analyse
+
+### Packet analyse using the bash script
+```bash
+sudo apt-get install tshark
+sudo ./capture_packets.sh analyze <name>.pcap
+```
+Then you should see something like this:
+![](../_images/cp2/pkt_analyze_bash.png)
+
+
+### Packet analyse using Wireshark
+Wireshark is a powerful network packet capture and analysis tool. [Download here.](https://www.wireshark.org/download.html) After installation, copy the lua file ```tcp.lua``` to the directory for wireshark plugins, for example: ```E:\Applications\Wireshark\plugins```. Then start wireshark and open the captured file ```<name>.pacp```. Now you can analyze the packets with a beautiful user interface.
+![](../_images/cp2/pkt_analyze_wireshark.png)
