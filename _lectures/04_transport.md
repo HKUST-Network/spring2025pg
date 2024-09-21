@@ -13,4 +13,5 @@ links:
 hide_from_announcments: true
 ---
 **Suggested Readings:**
-
+- [P&D 5.1](https://book.systemsapproach.org/e2e/udp.html)
+- [P&D 5.2](https://book.systemsapproach.org/e2e/tcp.html)
