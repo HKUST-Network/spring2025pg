@@ -3,10 +3,12 @@ type: lecture
 date: 2024-09-19
 title: TCP Basics
 thumbnail: /static_files/presentations/lec.jpg
-# links: 
-#     - url: https://google.com
-#       name: slides
+links: 
+    - url: https://canvas.ust.hk/courses/58326/modules/items/1430893
+      name: slides
+    - url: https://canvas.ust.hk/courses/58326/pages/elec3120-l1-2024-09-19-15-00
+      name: recording
 hide_from_announcments: true
 ---
 **Suggested Readings:**
-
+- [P&D 5.2](https://book.systemsapproach.org/e2e/tcp.html)

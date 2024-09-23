@@ -97,3 +97,6 @@ Then you should see something like this:
 ### Packet analyse using Wireshark
 Wireshark is a powerful network packet capture and analysis tool. [Download here.](https://www.wireshark.org/download.html) After installation, copy the lua file ```tcp.lua``` to the directory for wireshark plugins, for example: ```E:\Applications\Wireshark\plugins```. Then start wireshark and open the captured file ```<name>.pacp```. Now you can analyze the packets with a beautiful user interface.
 ![](../_images/cp2/pkt_analyze_wireshark.png)
+
+# What to submit
+Your implementation should be in the following files: ```foggy_function.cc```, ```foggy_tcp.cc```, ```foggy_function.h``` and ```foggy_tcp.h```. You can run the `submit.py` at the root of the project which will generate a `submit.zip` file including these four files, then submit the `submit.zip` file to Gradescope. The autograder will copy those four files you submitted to the starter codes and do the testing. 

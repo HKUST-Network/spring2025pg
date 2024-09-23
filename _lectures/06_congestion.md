@@ -3,10 +3,11 @@ type: lecture
 date: 2024-09-24
 title: Congestion Control
 thumbnail: /static_files/presentations/lec.jpg
-# links: 
-#     - url: https://google.com
-#       name: slides
+links: 
+    - url: https://canvas.ust.hk/courses/58326/modules/items/1433438
+      name: slides
 hide_from_announcments: true
 ---
 **Suggested Readings:**
+- [P&D 6.3](https://book.systemsapproach.org/congestion/tcpcc.html)
 
