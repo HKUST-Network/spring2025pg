@@ -18,6 +18,17 @@ The starter code is provided for you which is a stop-and-wait plementation built
 
 # Starter code
 
+Compared to checkpoint 1, we provide more codes for you. You can use ```git pull`` to get the latest codes from our course Github repository.
+
+```bash
+git pull origin main
+```
+
+And switch to the ```main``` branch.
+```bash
+git checkout main
+```
+
 ### ```server.cc``` and ```client.cc```
 The two sample applications for server and client. 
 
@@ -64,7 +75,7 @@ dos2unix capture_packets.sh
 
 Start packet capture.
 ```bash
-sudo ./capture_packets.sh start <name>.pacp
+sudo ./capture_packets.sh start <name>.pcap
 ```
 
 Stop packet capture
