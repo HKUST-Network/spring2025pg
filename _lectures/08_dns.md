@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-10-03
+date: 2024-10-08
 title: DNS
 thumbnail: /static_files/presentations/lec.jpg
 # links: 

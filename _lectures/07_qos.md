@@ -1,7 +1,7 @@
 ---
 type: lecture
-date: 2024-09-26
-title: Advanced Congestion Control
+date: 2024-10-03
+title: Queue Management
 thumbnail: /static_files/presentations/lec.jpg
 # links: 
 #     - url: https://google.com
@@ -9,5 +9,4 @@ thumbnail: /static_files/presentations/lec.jpg
 hide_from_announcments: true
 ---
 **Suggested Readings:**
-- [TCPCC 4](https://tcpcc.systemsapproach.org/algorithm.html)
-- [TCPCC 5](https://tcpcc.systemsapproach.org/avoidance.html)
+- [P&D 6.2](https://book.systemsapproach.org/congestion/queuing.html)
