@@ -8,6 +8,8 @@ links:
       name: slides
     - url: https://canvas.ust.hk/courses/58326/pages/elec3120-l1-2024-09-24-15-00
       name: recording 
+    - url: https://canvas.ust.hk/courses/58326/modules/items/1436053
+      name: notes
 hide_from_announcments: true
 ---
 **Suggested Readings:**
