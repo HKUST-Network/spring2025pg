@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2024-10-24
-title: BGP and Routing Basics
+title: Routing Basics
 thumbnail: /static_files/presentations/lec.jpg
 # links: 
 #     - url: https://google.com
