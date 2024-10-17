@@ -18,10 +18,11 @@ In this checkpoint, you need to implement TCP Reno, as discussed in class, based
 In general, the number of outstanding (unACKed) bytes is equal to min(RWND, CWND). RWND is the advertised window size of receiver and CWND is the congestion window size of sender. RWND is determined by the receiver according to buffer size, CPU processing ability and system memory size. TCP Reno can adjust CWND to avoid network congestion according to the network condition.
 
 # Loss recovery
-When the packet loss happens, you should be able to detect the packet loss and recover it. The sender detects the packet loss by timeout and duplicate ACKs. Then the sender should retransmit the lost packet again to recover the loss.
+When the packet loss happens, you should be able to detect the packet loss and recover it. The sender detects the packet loss by timeout and three duplicate ACKs. Then the sender should retransmit the lost packet again to recover the loss.
 
 # Flow control
-Flow control is related to RWND, which we can get the value from the header of the packets, which are sent from receiver. So what you should do here is extract the advertise window size from the header.
+Flow control is related to RWND and we can get the value from the header of ACK packets from receiver. The advertised window in the packet header is equal to RWND as shown in the following figure. So what you should do here is extract the advertise window size from the header.
+RWND is used to avoid that the sender sends too much packets in a short period to overflow the packet buffer of receiver. RWND + unprocessed packets size = buffer size. And, in this project, this formulation is equal to RWND + unused bytes in receive_window = receive_window size. So the receiver has to update RWND every time sending ACK packets.
 
 ![](../_images/cp3/cmu_tcp_header-1.png)
 
@@ -35,13 +36,13 @@ get_advertised_window/set_advertised_window
 ```
 to get/set the advertised window size in the packet header.
 # Congestion Control
-Flow control is related to CWND, which we can get the value in the sender. And in the code, we use
+Congestion control is related to CWND, which we can get the value in the sender. And in the code, we use
 ```
 windows.congestion_window
 ```
 to represent the congestion window size.
 
-Flow control is composed of three different parts: slow start, congestion avoidance and fast recovery. Then we introduce the detail of them.
+Congestion control is composed of three different parts: slow start, congestion avoidance and fast recovery. Then we introduce the detail of them.
 
 Slow start: at the beginning, CWND is 1 MSS and every time the sender receives a ACK, CWND increases by 1 MSS. So CWND will be doubled every RTT time.
 
