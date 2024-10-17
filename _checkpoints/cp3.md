@@ -11,11 +11,14 @@ due_event:
 # Introduction
 In this checkpoint, you need to implement TCP Reno, as discussed in class, based on **your own TCP** in CP2. What you need to implement in CP3 includes:
 
+* Loss recovery,
 * Flow control, and
 * Congestion control.
 
-In general, the number of outstanding (unACKed) bytes is equal to $\min$(RWND, CWND). RWND is the advertised window size of receiver and CWND is the congestion window size of sender. RWND is determined by the receiver according to buffer size, CPU processing ability and system memory size. TCP Reno can adjust CWND to avoid network congestion according to the network condition.
+In general, the number of outstanding (unACKed) bytes is equal to min(RWND, CWND). RWND is the advertised window size of receiver and CWND is the congestion window size of sender. RWND is determined by the receiver according to buffer size, CPU processing ability and system memory size. TCP Reno can adjust CWND to avoid network congestion according to the network condition.
 
+# Loss recovery
+When the packet loss happens, you should be able to detect the packet loss and recover it. The sender detects the packet loss by timeout and duplicate ACKs. Then the sender should retransmit the lost packet again to recover the loss.
 
 # Flow control
 Flow control is related to RWND, which we can get the value from the header of the packets, which are sent from receiver. So what you should do here is extract the advertise window size from the header.
@@ -47,7 +50,7 @@ Congestion avoidance: During the slow start process, CWND is not doubled all tim
 Fast recovery: By default, the sender have to go back to slow start state when the sender detects three duplicate ACK or timeout. But now, we have fast recovery, which means the sender only needs to set SSTHRESH=SSTHRESH/2 and CWND=SSTHRESH+3*MSS.
 
 ![](../_images/cp3/state_diagram.png)
-So what you have to do is to implement this FSM. For this FSM, we already have provided some variables in the code.
+So what you have to do is to implement this FSM. And you have to update the sending window size according to min(CWND, RWND) all the time. For this FSM, we already have provided some variables in the code.
 
 FSM state 
 ```
