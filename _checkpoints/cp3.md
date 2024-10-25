@@ -18,11 +18,10 @@ In this checkpoint, you need to implement TCP Reno, as discussed in class, based
 In general, the number of outstanding (unACKed) bytes is equal to min(RWND, CWND). RWND is the advertised window size of receiver and CWND is the congestion window size of sender. RWND is determined by the receiver according to buffer size, CPU processing ability and system memory size. TCP Reno can adjust CWND to avoid network congestion according to the network condition.
 
 # Loss recovery
-When the packet loss happens, you should be able to detect the packet loss and recover it. The sender detects the packet loss by timeout (**to simpify, we don't need to consider timeout in our project**) and three duplicate ACKs. Then the sender should retransmit the lost packet again to recover the loss.
+When the packet loss happens, you should be able to detect the packet loss and recover it. The sender detects the packet loss by timeout (**to simplify, we don't need to consider timeout in our project**) and three duplicate ACKs. Then the sender should retransmit the lost packet again to recover the loss.
 
 # Flow control
-Flow control is related to RWND and we can get the value from the header of ACK packets from receiver. The advertised window in the packet header is equal to RWND as shown in the following figure. So what you should do here is extract the advertise window size from the header.
-RWND is used to avoid that the sender sends too much packets in a short period to overflow the packet buffer of receiver. RWND + unprocessed packets size = buffer size. And, in this project, this formulation is equal to RWND + unused bytes in receive_window = receive_window size. So the receiver has to update RWND every time sending ACK packets.
+Flow control is related to RWND and we can get the value from the header of ACK packets from the receiver. The advertised window in the packet header is equal to RWND as shown in the following figure. RWND is related to the remaining buffer size at the receiver to avoid buffer overflow. For example, if the buffer size of the receiver is 64 MSS bytes and there are 30 MSS bytes in the buffer, the advertised window size is 34 MSS bytes now (**to simplify, we don't need to consider this in CP3**). **What you need to do in flow control is for the sender to be able to adjust the sending window size according to RWND when RWND has been changed**. So the sender needs to extract the advertise window size from the header and adjusts the sending window size according to the formulation min(RWND, CWND).
 
 ![](../_images/cp3/cmu_tcp_header-1.png)
 
@@ -48,7 +47,7 @@ Slow start: at the beginning, CWND is 1 MSS and every time the sender receives a
 
 Congestion avoidance: During the slow start process, CWND is not doubled all time. After CWND reaches the threshold value-SSTHRESH (MSS * 64 by default), CWND only increases (MSS/CWND) MSS, which is equal to 1 MSS every RTT time. This process is called congestion avoidance.
 
-Fast recovery: By default, the sender have to go back to slow start state when the sender detects three duplicate ACK or timeout (**to simpify, we don't need to consider timeout in our project**). But now, we have fast recovery, which means the sender only needs to set SSTHRESH=SSTHRESH/2 and CWND=SSTHRESH+3*MSS.
+Fast recovery: By default, the sender have to go back to slow start state when the sender detects three duplicate ACK or timeout (**to simplify, we don't need to consider timeout in our project**). But now, we have fast recovery, which means the sender only needs to set SSTHRESH=SSTHRESH/2 and CWND=SSTHRESH+3*MSS.
 
 ![](../_images/cp3/state_diagram.png)
 So what you have to do is to implement this FSM. And you have to update the sending window size according to min(CWND, RWND) all the time. For this FSM, we already have provided some variables in the code.
