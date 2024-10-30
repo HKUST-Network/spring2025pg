@@ -1,11 +1,11 @@
 ---
 type: lecture
 date: 2024-10-31
-title: Routing Protocols
+title: LAN Routing
 thumbnail: /static_files/presentations/lec.jpg
-# links: 
-#     - url: https://google.com
-#       name: slides
+links: 
+    - url: https://canvas.ust.hk/courses/58326/modules/items/1451070
+      name: slides
 hide_from_announcments: true
 ---
 **Suggested Readings:**
