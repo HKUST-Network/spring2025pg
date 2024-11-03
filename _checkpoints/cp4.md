@@ -17,29 +17,33 @@ In this checkpoint, you need to finish two tasks based on **your own CP3 code**.
 # Dr. Matt Mathis's hypothesis
 ## Hypothesis
 In Checkpoint 1, we asked you questions and you formed your own hypotheses. In this checkpoint, we are going to give you a hypothesis formulated by Dr. Matt Mathis: that TCP Reno implementations obey the following throughput equation:
-$$\text{throughput} = \frac{MSS}{RTT}\times\frac{C}{\sqrt{p}}$$, 
-where $$C$$ is a constant, $$p$$ is the loss probability, RTT is the round-trip time and MSS is 1400 bytes in our project. The following measurements will help you verify this hypothesis.
+**throughput = (MSS/RTT)*(C/sqrt(p))**, where **C** is a constant, **p** is the loss probability, RTT is the round-trip time and MSS is 1400 bytes in our project. The following measurements will help you verify this hypothesis.
 
 (References: https://dl.acm.org/doi/10.1145/263932.264023)
 ## Experiment
-Use tcconfig (checkpoint 1) to adjust the loss probability $$p$$ on the sender node to different values.
+Use tcconfig (checkpoint 1) to adjust the loss probability **p** on the sender node to different values.
 ```
 sudo tcset eth0 --rate 10Mbps --delay 20ms --loss 0.01%
 ```
-For different values of $$p$$, **transfer a large file** and measure the duration of the transfer (make sure to adjust the file size so that your transfer takes at least a few seconds). Use the transfer duration and the file size to calculate the throughput. Repeat the same experiment 10 times for each loss probability. Create a line plot with $$\frac{1}{\sqrt{p}}$$ on the $$x$$ axis and throughput on the $$y$$ axis. Do linear regression and include the regression line on the same plot.
+For different values of **p**, **transfer a large file** and measure the duration of the transfer (make sure to adjust the file size so that your transfer takes at least a few seconds). Use the transfer duration and the file size to calculate the throughput. Repeat the same experiment 10 times for each loss probability. Create a line plot with **1/sqrt(p)** on the x axis and throughput on the y axis. Do linear regression and include the regression line on the same plot.
 
 ## Inference
 Based on the results of your experiments, we ask that you answer the following questions:
-* Using your linear regression, what value did you find for $$C$$?
-* Compute the Pearson Correlation Coefficient between $$\frac{1}{\sqrt{p}}$$  and the throughput that you measured.
+* Using your linear regression, what value did you find for **C**?
+* Compute the Pearson Correlation Coefficient between **1/sqrt(p)**  and the throughput that you measured.
 * Does your data corroborate Dr. Mathis's hypothesis? Why or why not?
+
+## Hint
+Due to the lack of the timeout retransmission, sometimes your program may stuck please try again.
 
 # Your own CCA
 You now have the opportunity to design your own CCA with the goal of outperforming TCP Reno and you can modify anything you like.
-* The metric is throughput (as measured by the time it takes to transfer a 20MB file).
+* The metric is throughput (as measured by the time it takes to transfer a 1MB file).
 
 ## Hint
-You can go through the lecture: Congestion Control and lecture: Advanced Congestion Control again.
+* You can go through the lecture: Congestion Control and lecture: Advanced Congestion Control again.
+* Due to the lack of the timeout retransmission, sometimes your program may stuck please try/submit again.
+* **Test link: RTT = 200ms, the buffer size of the router is 20 packets. So the router will drop packets when the buffer is full.**
 
 ## How to test by yourself
 ### tcconfig
@@ -61,10 +65,10 @@ We will evaluate your CCA by autograder and use a leaderboard to show the result
 ## Report
 The report should include two parts: (1) Dr. Matt Mathis's hypothesis and (2) Your own CCA.
 ### Dr. Matt Mathis's hypothesis
-* Create a line plot with $$\frac{1}{\sqrt{p}}$$ on the $$x$$ axis and throughput on the $$y$$ axis.
+* Create a line plot with **1/sqrt(p)** on the x axis and throughput on the y axis.
 * Do linear regression and include the regression line on the same plot.
-* Using your linear regression, what value did you find for $$C$$?
-* Compute the Pearson Correlation Coefficient between $$\frac{1}{\sqrt{p}}$$  and the throughput that you measured.
+* Using your linear regression, what value did you find for **C**?
+* Compute the Pearson Correlation Coefficient between **1/sqrt(p)**  and the throughput that you measured.
 * Does your data corroborate Dr. Mathis's hypothesis? Why or why not?
 
 ### Your own CCA
@@ -72,8 +76,8 @@ In your report include a section called ``Algorithm Proposal.'' In this section,
 * Propose a new algorithm (or a modification to Reno) that improves its throughput. Provide a detailed algorithm description, including why your new algorithm will improve throughput relative to your Reno implementation.
 
 In your report include a section called ``Algorithm Evaluation.'' In this section, you should:
-* Provide data comparing your Reno implementation to your new algorithm completing a 20MB transfer.
-* That means how long does it take for a single connection to transfer 20MB?
+* Provide data comparing your Reno implementation to your new algorithm completing a 1MB transfer.
+* That means how long does it take for a single connection to transfer 1MB?
 
 <!-- * Provide data comparing your Reno implementation to your new algorithm completing a 20MB transfer. Compare the following properties of both algorithms:
     1. How long does it take for a single connection to transfer 20MB?
