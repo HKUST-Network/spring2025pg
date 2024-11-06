@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-11-14
+date: 2024-11-12
 title: Content Delivery Networks
 thumbnail: /static_files/presentations/lec.jpg
 # links: 
