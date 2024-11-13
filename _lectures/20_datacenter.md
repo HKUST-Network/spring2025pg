@@ -3,9 +3,9 @@ type: lecture
 date: 2024-11-14
 title: Datacenter Network
 thumbnail: /static_files/presentations/lec.jpg
-# links: 
-#     - url: https://google.com
-#       name: slides
+links: 
+    - url: https://canvas.ust.hk/courses/58326/modules/items/1455829
+      name: slides
 hide_from_announcments: true
 ---
 **Suggested Readings:**
