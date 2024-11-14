@@ -11,4 +11,5 @@ links:
 hide_from_announcments: true
 ---
 **Suggested Readings:**
+- [P&D 2.6](https://book.systemsapproach.org/direct/ethernet.html)
 

@@ -11,4 +11,4 @@ links:
 hide_from_announcments: true
 ---
 **Suggested Readings:**
-
+- [P&D 1.3](https://book.systemsapproach.org/foundation/architecture.html)

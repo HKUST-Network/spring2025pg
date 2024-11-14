@@ -13,4 +13,4 @@ links:
 hide_from_announcments: true
 ---
 **Suggested Readings:**
-
+- [P&D 3.4](https://book.systemsapproach.org/internetworking/routing.html)

@@ -11,4 +11,4 @@ links:
 hide_from_announcments: true
 ---
 **Suggested Readings:**
-
+- [P&D 9.3.1](https://book.systemsapproach.org/applications/infrastructure.html#name-service-dns)
