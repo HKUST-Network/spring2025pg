@@ -72,12 +72,12 @@ The report should include two parts: (1) Dr. Matt Mathis's hypothesis and (2) Yo
 * Does your data corroborate Dr. Mathis's hypothesis? Why or why not?
 
 ### Your own CCA
-In your report include a section called ``Algorithm Proposal.'' In this section, you should:
+In your report include a section called **Algorithm Proposal**. In this section, you should:
 * Propose a new algorithm (or a modification to Reno) that improves its throughput. Provide a detailed algorithm description, including why your new algorithm will improve throughput relative to your Reno implementation.
 
-In your report include a section called ``Algorithm Evaluation.'' In this section, you should:
+In your report include a section called **Algorithm Evaluation**. In this section, you should:
 * Provide data comparing your Reno implementation to your new algorithm completing a 1MB transfer.
-* That means how long does it take for a single connection to transfer 1MB?
+* That means how long does it take for a single connection to transfer 1MB.
 
 <!-- * Provide data comparing your Reno implementation to your new algorithm completing a 20MB transfer. Compare the following properties of both algorithms:
     1. How long does it take for a single connection to transfer 20MB?
