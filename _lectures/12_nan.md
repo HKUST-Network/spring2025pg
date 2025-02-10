@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-10-01
+date: 2025-04-21
 title: NO LECTURE
 thumbnail: /static_files/presentations/lec.jpg
 # links: 
@@ -8,5 +8,4 @@ thumbnail: /static_files/presentations/lec.jpg
 #       name: slides
 hide_from_announcments: true
 ---
-**Suggested Readings:**
 
