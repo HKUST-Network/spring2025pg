@@ -11,18 +11,18 @@ items:
   name: Lectures
   icon_class: fas fa-book-reader
 
-- url: /assignments/
+externals:
+- url: https://canvas.ust.hk/courses/61568/assignments
   name: Assignments
   icon_class: fas fa-user-graduate
 
-- url: /project/
-  name: Project
+- url: https://github.com/hkust-spark/sparkrtc-public
+  name: SparkRTC
   icon_class: fas fa-user-graduate
 
-externals:
-- url: https://www.gradescope.com/courses/834069
-  name: Gradescope
-  icon_class: fas fa-user-graduate
+- url: https://hkust-foggynet25spring.hotcrp.com/
+  name: HotCRP
+  icon_class: fas fa-book-reader
 
 - url: https://edstem.org/au/courses/16830/discussion/
   name: Ed

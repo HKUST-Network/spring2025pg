@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2025-04-07
-title: Power and Costs
+title: Power, Costs, and Security
 thumbnail: /static_files/presentations/lec.jpg
 # links: 
     # - url: https://canvas.ust.hk/courses/58326/modules/items/1443255
