@@ -10,4 +10,9 @@ thumbnail: /static_files/presentations/lec.jpg
     #   name: recording
 hide_from_announcments: true
 ---
+Reading list:
+- Congestion-Aware MAC Layer Adaptation to Improve Video Telephony over Wi-Fi
+- Measurement-based, Practical Techniques to Improve 802.11ac Performance
+- On Burst Transmission Scheduling in Mobile TV Broadcast Networks
+- Latency-aware rate adaptation in 802.11n home networks
 
