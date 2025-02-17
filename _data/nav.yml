@@ -16,6 +16,10 @@ externals:
   name: Assignments
   icon_class: fas fa-user-graduate
 
+- url: https://docs.google.com/document/d/e/2PACX-1vS2lwvEegfAQm9L8QlD6ryM5DZUtAwr2s2pbXJWhFPNcDQ5grrUaYTIQqNvxySSo_kPlXMtQ_tDi1NF/pub
+  name: Readings
+  icon_class: fas fa-book-reader
+
 - url: https://github.com/hkust-spark/sparkrtc-public
   name: SparkRTC
   icon_class: fas fa-user-graduate
